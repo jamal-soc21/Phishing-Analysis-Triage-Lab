@@ -109,14 +109,15 @@ As a Tier 1 SOC Analyst, the following actions are recommended:
 
 ## 📸 Evidence Screenshots
 
+*Figure 1: Decoding the obfuscated Base64 subject line — revealing the true intent.*
+
+![Base64 Decode](01_base64_decode.png)
+
 *Figure 2: MXToolbox header analysis — all authentication mechanisms failed (SPF, DKIM, DMARC).*
 
+![MXToolbox Analysis](02_mxtoolbox_analysis.png)
 
-- `01_raw_headers.png` — Raw email headers
-- `02_base64_decode.png` — Decoded subject line
-- `03_mxtoolbox_analysis.png` — Header analysis results
-- `04_auth_results.png` — SPF/DKIM/DMARC verification
-
+> ⚠️ Note: The MXToolbox "Copy/Paste Warning" is expected in lab environments. DKIM validation relies on raw byte-level integrity, which can be altered during manual header extraction. In production, headers are pulled directly from the Email Gateway or via `Show Original` to preserve signature integrity.
 ---
 
 ## 🎓 Key Learnings
