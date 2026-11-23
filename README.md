@@ -109,7 +109,8 @@ As a Tier 1 SOC Analyst, the following actions are recommended:
 
 ## 📸 Evidence Screenshots
 
-> *[Placeholder: Add your screenshots here]*
+*Figure 2: MXToolbox header analysis — all authentication mechanisms failed (SPF, DKIM, DMARC).*
+
 
 - `01_raw_headers.png` — Raw email headers
 - `02_base64_decode.png` — Decoded subject line
